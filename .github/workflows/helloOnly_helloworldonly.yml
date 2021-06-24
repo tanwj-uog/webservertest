@@ -18,13 +18,13 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: apt update
-      run: apt-get update
+      run: sudo apt-get update
       
     - name: install g++
-      run: apt-get install g++
+      run: sudo apt-get install g++
       
     - name: install unixodbc-dev
-      run : apt-get install unixodbc-dev
+      run : sudo apt-get install unixodbc-dev
 
     - name: Set up Python version
       uses: actions/setup-python@v1
