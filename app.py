@@ -1,7 +1,8 @@
 from flask import Flask, jsonify, request
-# import pyodbc
-# import collections
-# import json
+from waitress import serve
+import pyodbc
+import collections
+import json
 
 
 # conn = pyodbc.connect('DRIVER={SQL Server};'
