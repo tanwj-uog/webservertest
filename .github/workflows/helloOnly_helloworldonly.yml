@@ -25,6 +25,9 @@ jobs:
       
     - name: install unixodbc-dev
       run : sudo apt-get install unixodbc-dev
+      
+    - name : install pyodbc
+      run : sudo pip3 install pyodbc
 
     - name: Set up Python version
       uses: actions/setup-python@v1
